@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubaid Ur Rehman - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'portfolio-dark': 'rgb(61, 47, 47)',
+                        'accent': '#ff4500',
+                    }
+                }
+            }
+        }
+    </script>
+    
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+            <div>
+                <span class="text-3xl font-extrabold text-white">Ubaid<span class="text-accent">.</span></span>
+            </div>
+            <ul class="hidden md:flex list-none gap-8">
+                <li>
+                    <a href="#home" class="nav-link text-white font-medium hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link text-white font-medium hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link text-white font-medium hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Services</a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-link text-white font-medium hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link text-white font-medium hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+                </li>
+            </ul>
+            <div id="mobileMenuToggle" class="mobile-menu-toggle md:hidden flex flex-col cursor-pointer">
+                <span class="menu-bar w-6 h-0.5 bg-white mb-1.5 transition-all duration-300"></span>
+                <span class="menu-bar w-6 h-0.5 bg-white mb-1.5 transition-all duration-300"></span>
+                <span class="menu-bar w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <ul id="navigationMenu" class="navigation-menu fixed left-[-100%] top-[70px] flex flex-col bg-black/95 w-full text-center transition-all duration-300 shadow-lg py-8 md:hidden">
+            <li class="mb-4">
+                <a href="#home" class="text-white font-medium hover:text-accent transition-colors duration-300">Home</a>
+            </li>
+            <li class="mb-4">
+                <a href="#about" class="text-white font-medium hover:text-accent transition-colors duration-300">About</a>
+            </li>
+            <li class="mb-4">
+                <a href="#services" class="text-white font-medium hover:text-accent transition-colors duration-300">Services</a>
+            </li>
+            <li class="mb-4">
+                <a href="#projects" class="text-white font-medium hover:text-accent transition-colors duration-300">Projects</a>
+            </li>
+            <li>
+                <a href="#contact" class="text-white font-medium hover:text-accent transition-colors duration-300">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-portfolio-dark text-white relative overflow-hidden pt-20">
+        <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="text-center md:text-left">
+                <p class="text-xl mb-2 text-accent">Hello, I'm</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-2 text-white">Ubaid Ur Rehman</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-white">Full Stack <span class="text-accent">Developer</span></h2>
+                <p class="text-lg md:text-xl leading-relaxed mb-8 text-gray-300">
+                    Passionate developer creating innovative solutions with modern technologies. 
+                    Let's dive into the world of programming together.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-accent to-[#ff6b35] text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(255,69,0,0.4)] shadow-[0_10px_25px_rgba(255,69,0,0.3)] text-center">View My Work</a>
+                    <a href="#contact" class="inline-block px-8 py-3 rounded-full bg-transparent border-2 border-accent text-accent font-semibold transition-all duration-300 hover:bg-accent hover:text-white hover:-translate-y-1 text-center">Get In Touch</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <img src="my-image-ava01.jpg" alt="Ubaid Ur Rehman" class="w-full h-full object-cover rounded-full border-[5px] border-accent/30 shadow-[0_0_25px_#ff4500] hover:scale-105 transition-transform duration-300 animate-bounce-custom">
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-custom">
+            <div class="w-0.5 h-8 bg-white relative">
+                <div class="absolute bottom-0 left-[-3px] w-2 h-2 border-r-2 border-b-2 border-white transform rotate-45"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="flex justify-center">
+                    <div class="relative w-72 h-96 md:w-80 md:h-[400px] rounded-3xl overflow-hidden shadow-[0_0_25px_#ff4500] group">
+                        <img src="my-image-ava02.jpg" alt="About Ubaid" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">About <span class="text-accent">Me</span></h2>
+                    <h3 class="text-xl md:text-2xl text-accent mb-4">Creative Developer & Problem Solver</h3>
+                    <p class="text-lg md:text-xl leading-relaxed text-white mb-8">
+                        I'm a passionate developer known for bringing creativity, humor, and energy to every project I work on. 
+                        With expertise in both front-end and back-end technologies, I create seamless digital experiences 
+                        that combine functionality with beautiful design.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center gap-3 p-3 bg-accent/10 rounded-xl border border-accent/30">
+                            <i class="fas fa-code text-accent text-xl"></i>
+                            <span class="text-white">Clean Code</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-accent/10 rounded-xl border border-accent/30">
+                            <i class="fas fa-mobile-alt text-accent text-xl"></i>
+                            <span class="text-white">Responsive Design</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-accent/10 rounded-xl border border-accent/30">
+                            <i class="fas fa-rocket text-accent text-xl"></i>
+                            <span class="text-white">Performance</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-accent/10 rounded-xl border border-accent/30">
+                            <i class="fas fa-users text-accent text-xl"></i>
+                            <span class="text-white">Team Player</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-accent to-[#ff6b35] text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(255,69,0,0.4)] shadow-[0_10px_25px_rgba(255,69,0,0.3)]">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-portfolio-dark">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-white">My <span class="text-accent">Services</span></h2>
+            <p class="text-lg md:text-xl text-center text-gray-300 mb-12">What I can do for you</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl shadow-xl text-center transition-all duration-300 hover:-translate-y-2.5 hover:bg-accent/10 border border-accent/30 group">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-[#ff6b35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-laptop-code text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Front-End Development</h3>
+                    <p class="text-gray-300 leading-relaxed">Creating responsive and interactive user interfaces using modern frameworks and technologies.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl shadow-xl text-center transition-all duration-300 hover:-translate-y-2.5 hover:bg-accent/10 border border-accent/30 group">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-[#ff6b35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-server text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Back-End Development</h3>
+                    <p class="text-gray-300 leading-relaxed">Building robust server-side applications and APIs with scalable architecture and security.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl shadow-xl text-center transition-all duration-300 hover:-translate-y-2.5 hover:bg-accent/10 border border-accent/30 group">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-[#ff6b35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-paint-brush text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Graphics Design</h3>
+                    <p class="text-gray-300 leading-relaxed">Designing visually appealing graphics and user interfaces that enhance user experience.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl shadow-xl text-center transition-all duration-300 hover:-translate-y-2.5 hover:bg-accent/10 border border-accent/30 group">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-[#ff6b35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-cloud text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Salesforce Administration</h3>
+                    <p class="text-gray-300 leading-relaxed">Managing and customizing Salesforce platforms to optimize business processes and workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">Featured <span class="text-accent">Projects</span></h2>
+            <p class="text-lg md:text-xl text-center text-gray-600 mb-12">Some of my recent work</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl group">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="img01.webp" alt="Project 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Bangash-1122?tab=repositories" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">A full-stack e-commerce solution with modern UI and secure payment integration.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">React</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl group">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="img04....jpg" alt="Project 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Bangash-1122?tab=repositories" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Task Management App</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">A collaborative task management application with real-time updates and team features.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Vue.js</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Express</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">Get In <span class="text-accent">Touch</span></h2>
+            <p class="text-lg md:text-xl text-center text-gray-600 mb-12">Let's discuss your next project</p>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-[#ff6b35] rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-gray-800">Email</h3>
+                            <p class="text-gray-600">ubaid@example.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-[#ff6b35] rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-gray-800">Phone</h3>
+                            <p class="text-gray-600">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-[#ff6b35] rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-gray-800">Location</h3>
+                            <p class="text-gray-600">Your City, Country</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="bg-gray-50 p-8 rounded-3xl shadow-lg">
+                    <div class="mb-6">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border-2 border-transparent rounded-xl bg-white font-poppins text-base transition-all duration-300 focus:outline-none focus:border-accent">
+                    </div>
+                    <div class="mb-6">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 border-2 border-transparent rounded-xl bg-white font-poppins text-base transition-all duration-300 focus:outline-none focus:border-accent">
+                    </div>
+                    <div class="mb-6">
+                        <input type="text" name="subject" placeholder="Subject" required class="w-full px-4 py-3 border-2 border-transparent rounded-xl bg-white font-poppins text-base transition-all duration-300 focus:outline-none focus:border-accent">
+                    </div>
+                    <div class="mb-6">
+                        <textarea name="message" rows="6" placeholder="Your Message" required class="w-full px-4 py-3 border-2 border-transparent rounded-xl bg-white font-poppins text-base resize-y min-h-[120px] transition-all duration-300 focus:outline-none focus:border-accent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-8 py-3 rounded-full bg-gradient-to-r from-accent to-[#ff6b35] text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(255,69,0,0.4)] shadow-[0_10px_25px_rgba(255,69,0,0.3)]">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1a] text-white py-12">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Ubaid Ur Rehman</h3>
+                    <p class="text-gray-400 leading-relaxed">Full Stack Developer passionate about creating amazing digital experiences.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-white">Quick Links</h4>
+                    <ul class="list-none space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-accent transition-colors duration-300">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-white">Follow Me</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Bangash-1122?tab=repositories" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:bg-[#ff6b35]">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/10 text-gray-400">
+                <p>&copy; 2025 Ubaid Ur Rehman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

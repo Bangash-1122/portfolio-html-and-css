@@ -1,0 +1,37 @@
+/* Font Styles Only */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        .animate-bounce-custom {
+            animation: bounce 2s infinite;
+        }
+        .navigation-menu.active {
+            left: 0;
+        }
+        .mobile-menu-toggle.active .menu-bar:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-menu-toggle.active .menu-bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .mobile-menu-toggle.active .menu-bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
